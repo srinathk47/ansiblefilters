@@ -8,13 +8,13 @@
 
     - name: convert to uppercase
       vars:
-      greeting: "Hello ramesh"
+      greeting: "Hello Ramesh"
       ansible.builtin.debug: 
         msg: "{{ greeting | upper }}"
 
     - name: convert to lowercase
       vars: 
-        greeting: "Hello ramesh"
+        greeting: "Hello Ramesh"
       ansible.builtin.debug: 
         msg: "{{ greeting | lower }}" 
 
