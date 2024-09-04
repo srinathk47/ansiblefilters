@@ -13,3 +13,13 @@
         greeting: "Hello Ramesh"
       ansible.builtin.debug:
         msg: "{{ greeting | lower}}"
+    
+    - name: convert map to list
+      vars: 
+         course: 
+          name: "Devops with aws"
+          duration: 120 
+          trainer: "shiva"
+      ansible.builtin.debug:
+        msg: "{{ course| dict2items }}"
+
