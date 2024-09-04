@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: demo on filters/functions
+  hosts: all
   tasks:
     - name: convert to uppercase
       ansible.builtin.debug:
