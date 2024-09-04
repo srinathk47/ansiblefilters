@@ -5,3 +5,7 @@
     - name: convert to uppercase
       ansible.builtin.debug:
         msg: "Hello, World!"
+
+    - name: convert to lowercase
+      ansible.builtin.debug:
+        msg: "Hello, World!"
