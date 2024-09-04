@@ -1,0 +1,20 @@
+ - name: demo on filters/functions
+   hosts: local
+   connection: local
+   tasks: 
+   - name: print the default variable
+     ansible.builtin.debug:
+      msg: "hello {{ course | default('Ansible') }}"
+
+   - name: convert to uppercase
+     vars:
+     greeting: "hello ramesh"
+     ansible.builtin.debug: 
+      msg: "{{ greeting | upper }}"
+
+   - name: convert to lowercase
+     vars: 
+      greeting: "Hello ramesh"
+     ansible.builtin.debug: 
+      msg: "{{ greetins | lower }}" 
+
