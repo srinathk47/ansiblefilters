@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: convert to uppercase
+      ansible.builtin.debug:
+        msg: "Hello, World!"
